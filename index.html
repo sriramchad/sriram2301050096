@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery</title>
+<link rel="stylesheet" href="text.css">
+</head>
+<body>
+
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+    <div class="gallery">
+        <a href="gellery/Abonded_old_railway.jpg">
+            <img src="gellery/Abonded_old_railway.jpg" alt="Photo 1" width="400" height="400">
+            <div class="caption">Photo 1 Caption</div>
+        </a>
+        <a href="gellery/Attitude girl.jpg">
+            <img src="gellery/Attitude girl.jpg" alt="Photo 2" width="400" height = "400">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Tom and jerry.jpg">
+            <img src="gellery/Tom and jerry.jpg" alt="Photo 2" width="400" height = "400">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Cabin in the Fall.jpg">
+            <img src="gellery/Cabin in the Fall.jpg" alt="Photo 2" width="400" height = "400">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Continental gt650.jpg">
+            <img src="gellery/Continental gt650.jpg" alt="Photo 2" width="400" height = "400">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Om namashivaya.jpg">
+            <img src="gellery/Om namashivaya.jpg" alt="Photo 2" width="400" height = "400">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+        <a href="gellery/Royal Enfield .jpg">
+            <img src="gellery/Royal Enfield .jpg" alt="Photo 2" width="400" height = "400">
+            <div class="caption">Photo 2 Caption</div>
+        </a>
+    </div>
+    <!-- Add more gallery items as needed -->
+</div>
+
+<div class="lightbox" id="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img src="" class="lightbox-img" alt="Lightbox Image">
+</div>
+
+<script>
+    // Function to open lightbox
+    function openLightbox(imgSrc) {
+        document.getElementById('lightbox').style.display = 'flex';
+        document.querySelector('.lightbox-img').src = imgSrc;
+    }
+
+    // Function to close lightbox
+    function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
